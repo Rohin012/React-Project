@@ -98,7 +98,7 @@ export default function SideNav() {
         </DrawerHeader>
         <Divider />
         <List>
-        <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate('/Home')}}>
+        <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate('/')}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -118,7 +118,7 @@ export default function SideNav() {
                 <ListItemText primary="Home" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate('/AddJob')}}>
+            <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate('/about')}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -135,10 +135,10 @@ export default function SideNav() {
                 >
                   
                 </ListItemIcon>
-                <ListItemText primary="Add Job" sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary="About" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate('/Profile')}}>
+            <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate('/settings')}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -155,7 +155,7 @@ export default function SideNav() {
                 >
                   
                 </ListItemIcon>
-                <ListItemText primary="Profile" sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary="Settings" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
         </List>
